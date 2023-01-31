@@ -30,7 +30,7 @@ jobs:
         shell: "bash"
         run: |
           cd ./blog
-          npm install
+          npm ci
       - name: Build 
         shell: "bash"
         env:
