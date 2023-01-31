@@ -2,7 +2,7 @@
 dist/
 .output/
 
-# dependencies
+# the heaviest object in the universe
 node_modules/
 
 # logs
