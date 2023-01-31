@@ -20,11 +20,29 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v3
-      - name: Install, build, and upload your site
-        uses: withastro/action@v0
+      - name: Set Up Node
+        uses: actions/setup-node@v3
+        with: 
+            node-version: 16
+            cache: npm
+            cache-dependency-path: ./blog/package-lock.json
+      - name: Install
+        shell: "bash"
+        run: |
+          cd ./blog
+          npm install
+      - name: Build 
+        shell: "bash"
+        env:
+          PACKAGE_MANAGER: npm
+        run: |
+          cd ./blog
+          npm run build
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-            path: "./blog"
-            package-manager: "npm" 
+          path: ./blog/dist/
+
 
         # with:
             # path: . # The root location of your Astro project inside the
