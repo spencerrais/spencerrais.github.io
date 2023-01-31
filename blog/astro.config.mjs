@@ -8,7 +8,6 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: "https://spencerrais.github.io",
-  base: "/blog",
   integrations: [
     tailwind({
       config: {
