@@ -11,7 +11,7 @@
     "format:check": "prettier --check .",
     "format": "prettier --write .",
     "cz": "cz",
-    "prepare": "husky install"
+    "prepare": "cd .. && husky install blog/.husky"
   },
   "dependencies": {
     "@astrojs/rss": "^1.0.3",
