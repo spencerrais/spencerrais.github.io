@@ -14,8 +14,6 @@ description:
 
 > A quick intro to Airflow in Docker for non-production local development.
 
-Creating Airflow inside of Docker.
-
 ## Table of contents
 
 ## Intro
@@ -100,4 +98,9 @@ docker compose up -d
 After these commands are run the Airflow webserver will be available at 
 'localhost:8080' after the webserver is ready. This might take some time and 
 it may appear that the webserver isn't working, but it will eventually.
+
+Provided that nothing has changed in the docker compose file, the airflow webserver 
+will be accessible via using 'airflow' for both user and password fields.
+
+You should now have Airflow in Docker for local development!
 
