@@ -3,34 +3,33 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
-
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
-
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
-
-<div>
-  <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
-</div>
-
+This blog will loosely follow my personal project I devote much of my time to
+and will likely touch upon the following general aspects: 
+- Data pipelining, transformation, and dimensioning
+- Application development 
+- API development
+- Software development workflow (Neovim, tmux)
+- Markets and how to find opportunites algorithmically
+- Testing different market strategies
+- Identifying patterns in time series
 ## Tech Stack
 
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
+This is not all-inclusive, but it is what I choose to work with currently. 
 
-## Features
+### Programming Languages 
+- Python: Flexible, fast enough, and has a huge data community
+- Golang: Fast and easy to use for API development as well as webservers
+- Typescript: Default frontend language with less pitfalls than Javascript
+- SQL: Generally the best way to transform data
 
-Here are certain features of this site.
+### Software 
+- PostgreSQL: Excellent OSS OLTP relational database
+- Airflow: Data pipeline tool where pipelines live as Python 
+- dbt: SQL transformations and testing that live in code
+- Kafka: Event streaming platform used for streaming data
+- Docker: Container software that allows for application-centric development
 
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
+### Tools
+- Neovim: Write and edit text at the speed of light
+- tmux: Never leave the terminal
 
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
