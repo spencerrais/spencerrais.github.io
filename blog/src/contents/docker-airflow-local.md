@@ -108,3 +108,4 @@ To shut down the docker containers and remove the images and volumes you can sim
 ```bash
 docker down -v --rmi all
 ```
+The docker compose file can be found [here](https://github.com/spencerrais/blog_examples/blob/main/batch-data-pipeline-with-airflow/docker-compose.yaml).

@@ -191,3 +191,5 @@ BashOperators which enable us to set bash commands to run.
 Like everything in programming there is no single correct way to
 go about things, but leaving it in Python is probably the best way in which others
 can easily come up to speed.
+
+Code for this example can be found [here](https://github.com/spencerrais/blog_examples/tree/main/batch-data-pipeline-with-airflow).
