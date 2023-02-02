@@ -104,3 +104,7 @@ will be accessible via using 'airflow' for both user and password fields.
 
 You should now have Airflow in Docker for local development!
 
+To shut down the docker containers and remove the images and volumes you can simply use 
+```bash
+docker down -v --rmi all
+```
