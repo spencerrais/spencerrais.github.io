@@ -3,7 +3,7 @@ title: Simple Batch Data Pipeline in Airflow
 author: Spencer Raisanen
 datetime: 2023-02-01T15:42:51Z
 slug: airflow-simple-batch
-featured: true
+featured: false
 draft: false
 tags:
   - Airflow
@@ -104,6 +104,8 @@ def transform_py(ti):
     Push the list that results to the transform XCOM
     """
     data = ti.xcom_pull(key='extract', task_ids='extract')
+    for item in data:
+        item['changePercent24Hr'] = float(item['changePercent24Hr'])
     data_sorted = sorted(
         data, key=lambda x: x['changePercent24Hr'], reverse=True)
     ti.xcom_push(key='transform', value=data_sorted)
