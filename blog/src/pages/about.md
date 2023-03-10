@@ -3,7 +3,7 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-This blog will loosely follow my personal project I devote much of my time to
+This blog will loosely follow my closed source personal project I devote much of my time to
 and will likely touch upon the following general aspects: 
 - Data pipelining, transformation, and dimensioning
 - Application development 
